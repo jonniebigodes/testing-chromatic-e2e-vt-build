@@ -11,7 +11,14 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "init-msw": "msw init public/",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "playwright": "playwright test",
+    "playwright:custom-directory": "playwright test --output custom-test-results",
+    "playwright:ui": "playwright test --ui",
+    "playwright:debug": "playwright test --debug",
+    "playwright:codegen": "playwright codegen",
+    "playwright:report": "playwright show-report",
+    "test-storybook-help": "test-storybook --help"
   },
   "dependencies": {
     "react": "^18.2.0",
