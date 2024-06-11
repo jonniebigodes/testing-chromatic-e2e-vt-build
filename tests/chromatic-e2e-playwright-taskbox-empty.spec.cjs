@@ -27,7 +27,6 @@ test.beforeEach(async ({ context }) => {
 test("Chromatic E2E Playwright - Wrong project type - Login OK with empty tasks", async ({
   page,
 }, testInfo) => {
-  // console.log("beforeEach test output dir", testInfo.outputDir);
   const email = "alice.carr@test.com";
   const password = "k12h1k0$5;lpa@Afn";
   await page.goto("/");
