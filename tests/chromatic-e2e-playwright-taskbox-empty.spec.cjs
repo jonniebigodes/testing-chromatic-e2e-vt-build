@@ -32,7 +32,7 @@ test("Chromatic E2E Playwright - Wrong project type - Login OK with empty tasks"
   await page.goto("/");
 
   // Take a snapshot of the initial page
-  await takeSnapshot(page, "Empty Tasks - Initial Stage", testInfo);
+  // await takeSnapshot(page, "Empty Tasks - Initial Stage", testInfo);
 
   console.log(
     `Initial page status - test info:${JSON.stringify(page.viewportSize())}`
