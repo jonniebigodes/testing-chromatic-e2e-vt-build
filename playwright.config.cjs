@@ -52,34 +52,34 @@ module.exports = defineConfig({
     },
 
     // Mobile
-    {
-      name: "Mobile_Iphone_8",
-      use: { ...devices["iPhone 8"] },
-    },
-    {
-      name: "Mobile_Iphone_8_Plus",
-      use: { ...devices["iPhone 8 Plus"] },
-    },
-    {
-      name: "Mobile_Iphone_12",
-      use: { ...devices["iPhone 12"] },
-    },
-    {
-      name: "Mobile_Iphone_14",
-      use: { ...devices["iPhone 12"] },
-    },
-    {
-      name: "Mobile_iPad_gen_5",
-      use: { ...devices["iPad (gen 5)"] },
-    },
-    {
-      name: "Mobile_iPad_gen_7",
-      use: { ...devices["iPad (gen 7)"] },
-    },
-    {
-      name: "Mobile_ipad_Pro_11",
-      use: { ...devices["iPad Pro 11"] },
-    },
+    // {
+    //   name: "Mobile_Iphone_8",
+    //   use: { ...devices["iPhone 8"] },
+    // },
+    // {
+    //   name: "Mobile_Iphone_8_Plus",
+    //   use: { ...devices["iPhone 8 Plus"] },
+    // },
+    // {
+    //   name: "Mobile_Iphone_12",
+    //   use: { ...devices["iPhone 12"] },
+    // },
+    // {
+    //   name: "Mobile_Iphone_14",
+    //   use: { ...devices["iPhone 12"] },
+    // },
+    // {
+    //   name: "Mobile_iPad_gen_5",
+    //   use: { ...devices["iPad (gen 5)"] },
+    // },
+    // {
+    //   name: "Mobile_iPad_gen_7",
+    //   use: { ...devices["iPad (gen 7)"] },
+    // },
+    // {
+    //   name: "Mobile_ipad_Pro_11",
+    //   use: { ...devices["iPad Pro 11"] },
+    // },
   ],
   webServer: {
     command: "yarn dev",
