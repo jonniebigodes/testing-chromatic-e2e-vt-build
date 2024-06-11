@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  Chromatic's UI Testing Handbook React template
+  Chromatic's UI Testing Handbook React template (to delete)
 </h1>
 
 This template ships with the main React and Storybook configuration files you'll need to get up and running fast.
