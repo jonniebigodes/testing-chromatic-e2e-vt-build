@@ -25,6 +25,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@chromatic-com/playwright": "^0.6.11",
+    "@chromatic-com/storybook": "^1.5.0",
     "@playwright/test": "^1.44.1",
     "@storybook/addon-a11y": "^7.6.6",
     "@storybook/addon-essentials": "^7.6.6",
@@ -40,6 +42,7 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
     "axe-playwright": "^2.0.1",
+    "chromatic": "^11.5.3",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
