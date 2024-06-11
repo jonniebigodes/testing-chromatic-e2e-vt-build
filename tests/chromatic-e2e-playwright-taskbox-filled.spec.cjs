@@ -51,14 +51,14 @@ test("Chromatic E2E Playwright - Wrong project type - Successful Login with task
   await page.goto("/");
 
   // Take a snapshot of the initial page
-  await takeSnapshot(page, "Filled Tasks - Initial Stage", testInfo);
+  //await takeSnapshot(page, "Filled Tasks - Initial Stage", testInfo);
 
   // Fills the form inputs
   await page.locator('input[name="email"]').fill(email);
   await page.locator('input[name="password"]').fill(password);
 
   // Take a snapshot of the form filled
-  await takeSnapshot(page, "Filled Tasks - Filled Form", testInfo);
+  //await takeSnapshot(page, "Filled Tasks - Filled Form", testInfo);
 
   // Clicks the submit button
   await page.getByRole("button", { name: "Sign in" }).click();
@@ -66,5 +66,5 @@ test("Chromatic E2E Playwright - Wrong project type - Successful Login with task
   await expect(page.locator('[aria-label="tasks"] div')).toHaveCount(6);
 
   // Take a snapshot of the form filled
-  await takeSnapshot(page, "Filled Tasks - Tasks Loaded", testInfo);
+  //await takeSnapshot(page, "Filled Tasks - Tasks Loaded", testInfo);
 });

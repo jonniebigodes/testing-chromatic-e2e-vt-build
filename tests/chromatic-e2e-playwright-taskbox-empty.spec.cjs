@@ -32,13 +32,17 @@ test("Chromatic E2E Playwright - Wrong project type - Login OK with empty tasks"
   await page.goto("/");
 
   // Take a snapshot of the initial page
-  await takeSnapshot(page, "Empty Tasks - Initial Stage", testInfo);
+  await takeSnapshot(page, "Empty Tasks - Initial Stage viewport", testInfo);
+
+  console.log(
+    `Initial page status - test info:${JSON.stringify(page.viewportSize())}`
+  );
   // Fills the form inputs
   await page.locator('input[name="email"]').fill(email);
   await page.locator('input[name="password"]').fill(password);
 
   // Take a snapshot of the filled form
-  await takeSnapshot(page, "Empty Tasks - Filled Form", testInfo);
+  //await takeSnapshot(page, "Empty Tasks - Filled Form", testInfo);
 
   // Clicks the submit button
   await page.getByRole("button", { name: "Sign in" }).click();
@@ -47,5 +51,5 @@ test("Chromatic E2E Playwright - Wrong project type - Login OK with empty tasks"
   await expect(page.getByText("You have no tasks")).toBeVisible();
 
   // Take a snapshot of the empty tasks
-  await takeSnapshot(page, "Empty Tasks - No Tasks Screen", testInfo);
+  //await takeSnapshot(page, "Empty Tasks - No Tasks Screen", testInfo);
 });
